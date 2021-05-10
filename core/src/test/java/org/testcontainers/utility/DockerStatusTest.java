@@ -66,7 +66,7 @@ public class DockerStatusTest {
     }
 
     private static String buildTimestamp(Instant instant) {
-        return DateTimeFormatter.ISO_INSTANT.format(instant);
+        return DateTimeFormatter.ISO_OFFSET_DATE_TIME.format(instant);
     }
 
     // ContainerState is a non-static inner class, with private member variables, in a different package.
